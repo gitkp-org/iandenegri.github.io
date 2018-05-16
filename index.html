@@ -1,45 +1,129 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap Landing Page Website Tutorial</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="style.css" rel="stylesheet" />
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styling.css">
+  <title>Ian Denegri</title>
+  </head>
+  <body>
+    <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
+      <div class="container-fluid">
+        <!-- Hamburger for mobile -->
+        <div class="navbar-header">
+          <button type="button" class='navbar-toggle' name="hamburger-button" data-toggle='collapse' data-target='#navbar-collapse-main'>
+            <span class='sr-only'>Toggle Nav</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <!-- Logo for navbar -->
+          <a class='navbar-brand' href="#"><img src="media/w3newbie.png" alt="Logo Image"></a>
+        </div>
+        <!-- Collapsed Navbar contents in mobile -->
+        <div class="collapse navbar-collapse" id='navbar-collapse-main'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li> <a class='active' href="#">Home</a> </li>
+            <li> <a href="#about"> About </a> </li>
+            <li> <a href="#projects"> Projects </a> </li>
+            <li> <a href="#contact"> Contact </a> </li>
+            <li> <a href="https://github.com/iandenegri"> GitHub </a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-
-
-
-
-
-
-
-<!--- iOS Landing Page Fix
-<section>
-	<div class="landing-text">
-		<h1>BOOTSTRAP</h1>
-		<h3>Learn the basic building blocks.</h3>
-		<a href="#" class="btn btn-default btn-lg">Get Started</a>
-	</div>
-	<div class="home-wrap">
-        <div id="home">
-		</div>
+    <div id='home' class="">
+      <!-- Landing Text -->
+      <div class="landing-text">
+        <h1>Ian Denegri</h1>
+        <h3>Florida-based Programmer</h3>
+        <a href="#" class='btn btn-default btn-lg'>Learn More</a>
+      </div>
     </div>
-</section>
--->
-
-<!--- iOS Fixed Image Fix
-<figure>
-	<div class="fixed-wrap">
-        <div id="fixed">
-		</div>
+    <!-- About Section -->
+    <div class="padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="media/bootstrap.png" alt="">
+          </div>
+          <div class="col-sm-6 text-center">
+            <h2>All about Ian Denegri</h2>
+            <p class='lead'>Hi, I'm Ian and I'm a Florida-based developer. </p>
+            <p class='lead'>As someone who's been coding for over three years and programming for just shy of one year I've worked on a range of products ranging from the design for an engineering firm to a community driven stastics site using data visualization for video games.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</figure>
--->
 
-</body>
+
+<!-- Project Section -->
+    <div class="padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <h4>Project A</h4>
+            <p> Insert a description of project A here. Image next to it should be an image of it or its code or something.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="media/sass.png" class='img-responsive' alt="">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <h4>Project B</h4>
+            <p> Insert a description of project A here. Image next to it should be an image of it or its code or something.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="media/less.png" class='img-responsive' alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Blank Scrolling Area -->
+    <div id='fixed'>
+    </div>
+
+
+<!-- Optional area for additional about me  -->
+    <div class="padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>More about Ian Denegri</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-6">
+            <img src="media/bootstrap2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class='container-fluid text-center'>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Contact Me!</h3>
+          <br>
+          <ul>
+		  	<li><strong>E-mail:</strong> iandenegri@hotmail.com</li>
+			<li><strong>Cell Phone:</strong>(813)-340-3146</li>
+		  </ul>
+        </div>
+        <div class="col-sm-6">
+          <h3>Connect Socially!</h3>
+          <a href="https://www.linkedin.com/in/iandenegri/" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"</script>
+  </body>
+
 </html>
