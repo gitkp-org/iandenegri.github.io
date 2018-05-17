@@ -67,10 +67,29 @@ footer {
   color: #FFF;
   text-align: left;
 }
-
+/* Contact form area */
 .footer-distributed .footer-left {
   display: inline-block;
   vertical-align: top;
+}
+
+.footer-distributed .footer-left p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-left p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-left p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
 }
 
 .fa {
