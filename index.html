@@ -33,17 +33,17 @@
         <!-- Collapsed Navbar contents in mobile -->
         <div class="collapse navbar-collapse" id='navbar-collapse-main'>
           <ul class='nav navbar-nav navbar-right'>
-            <li> <a class='active' href="#">Home</a> </li>
-            <li> <a href="#about"> About </a> </li>
-            <li> <a href="#projects"> Projects </a> </li>
-            <li> <a href="#contact"> Contact </a> </li>
+            <li> <a class='active' href="#home">Home</a> </li>
+            <li> <a class='scrollto' href="#about"> About </a> </li>
+            <li> <a class='scrollto' href="#projects"> Projects </a> </li>
+            <li> <a class='scrollto' href="#contact"> Contact </a> </li>
             <li> <a href="https://github.com/iandenegri" target="_blank"> GitHub </a> </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div id='home' class="">
+    <div id='home' class="home">
       <!-- Landing Text -->
       <div class="landing-text">
         <h1>Ian Denegri</h1>
@@ -133,14 +133,8 @@
     <script src="jquery\jquery3.3.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="bootstrap\js\bootstrap.min.js"></script>
-    <!-- Carousel -->
-    <script language="JavaScript" type="text/javascript">
-      $(document).ready(function(){
-        $('.carousel').carousel({
-          interval: 3000
-        })
-      });
-    </script>
+    <!-- Any JS that I want to add afterwards -->
+    <script src='mysite.js'></script>
   </body>
 
 </html>
