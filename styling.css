@@ -110,9 +110,10 @@ footer {
   text-decoration: none;
 }
 
-/* Styling for carousel */
-
-
+.pro-img {
+  border-radius: 50%;
+  box-shadow: 1px 5px 10px #aaaaaa;
+}
 
 @media (max-width: 768px) {
   .landing-text h1 {
