@@ -2,20 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1'>
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
+    <!-- CSS  -->
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="styling.css">
+    <!-- END CSS -->
   <title>Ian Denegri</title>
   </head>
   <body>
@@ -39,7 +30,7 @@
             <li> <a href="#about"> About </a> </li>
             <li> <a href="#projects"> Projects </a> </li>
             <li> <a href="#contact"> Contact </a> </li>
-            <li> <a href="https://github.com/iandenegri"> GitHub </a> </li>
+            <li> <a href="https://github.com/iandenegri" target="_blank"> GitHub </a> </li>
           </ul>
         </div>
       </div>
@@ -72,46 +63,6 @@
 <!-- Project Section -->
     <div class="padding">
       <div class="row" id='projects'>
-        <div class="carousel slide" id='myCarousel'>
-<!-- Slide indication markers -->
-          <ol class='carousel-indicators'>
-            <li class='active' data-slide-to='0' data-target='#myCarousel'></li>
-            <li  data-slide-to='1' data-target='#myCarousel'></li>
-            <li  data-slide-to='2' data-target='#myCarousel'></li>
-          </ol>
-<!-- End indicators -->
-<!-- Slides -->
-          <div class="carousel-inner">
-            <div class="item active" id='slide1'>
-              <div class="carousel-caption">
-                <h4>Projects</h4>
-                <p>Samples of past projects</p>
-              </div>
-            </div>
-
-            <div class="item" id='slide2'>
-              <div class="carousel-caption">
-                <h4>Slide 2</h4>
-                <p>This is another project</p>
-              </div>
-            </div>
-
-            <div class="item" id='slide3'>
-              <div class="carousel-caption">
-                <h4>Slide 3</h4>
-                <p>Third Slide</p>
-              </div>
-            </div>
-          </div>
-<!-- End slides -->
-<!-- Controls -->
-        <a href="#myCarousel" class='left carousel-control' data-slide='prev'>
-          <span class='icon-prev'></span>
-        </a>
-        <a href="#myCarousel" class='right carousel-control' data-slide='next'>
-          <span class='icon-next'></span>
-        </a>
-        </div>
       </div>
     </div>
 
@@ -152,15 +103,29 @@
 
   				<div>
   					<i class="fa fa-envelope"></i>
-  					<p><a href="mailto:support@company.com">iandenegri@hotmail.com</a></p>
+  					<p><a href="mailto:iandenegri@hotmail.com?subject=Hi, Ian, I'd like to get in touch!">iandenegri@hotmail.com</a></p>
   				</div>
         </div>
         <div class="col-sm-6">
           <h3>Connect Socially!</h3>
-          <a href="https://www.linkedin.com/in/iandenegri/" class="fa fa-linkedin"></a>
+          <a href="https://www.linkedin.com/in/iandenegri/" target="_blank" class="fa fa-linkedin"></a>
         </div>
       </div>
     </footer>
+
+<!-- JavaScript Calls -->
+    <!-- jQuery -->
+    <script src="jquery\jquery3.3.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap\js\bootstrap.min.js"></script>
+    <!-- Carousel -->
+    <script language="JavaScript" type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 3000
+        })
+      });
+    </script>
   </body>
 
 </html>
