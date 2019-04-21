@@ -1,0 +1,1 @@
+This site is currently made with HTML, CSS and JS. I want to remake this site so that it utilizes a Django backend.
