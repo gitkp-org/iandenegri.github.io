@@ -1,8 +1,49 @@
 <html>
-<p>dooby dooby doo wa</p>
-<ul>
-{% for interest in interests %}
-<li>{{interest}}</li>
-{% endfor %}
-</ul>
+    <body>
+        <h2 class="section-head">
+            {{sections.0.section_name}}
+        </h2>
+
+        <p class="section-blurb">
+            {{sections.0.section_blurb}}
+        </p>
+
+        <ul>
+            {% for interest in interests %}
+            <li class="unordered">
+                {{interest}}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2 class="section-head">
+            {{sections.1.section_name}}
+        </h2>
+
+        <p class="section-blurb">
+            {{sections.1.section_blurb}}
+        </p>
+
+        <ul>
+            {% for project in projects %}
+                <li class="unordered">
+                    {{project}}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <h1 class="my-name">
+            Ian Denegri
+        </h1>
+
+        <ul>
+            {% for social in socials %}
+            <li class="unordered">
+                <a href="{{social.url}}">
+                    {{social}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
 </html>
