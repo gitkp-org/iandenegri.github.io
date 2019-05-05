@@ -41,3 +41,11 @@ class Interest(models.Model):
 
     def __str__(self):
         return self.interest_name
+
+class Owner(models.Model):
+    first_name = models.CharField(max_length=128)
+    last_name = models.CharField(max_length=128)
+    resume = models.FileField(upload_to='media/documents/')
+
+    def __str__(self):
+        return "{0} {1}".format(self.first_name, self.last_name)

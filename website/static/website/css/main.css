@@ -19,6 +19,10 @@ body {
     align-items: center;
 }
 
+.left-section {
+  min-width: 500px;
+}
+
 .right-section {
   align-items: center;
   justify-content: center;
