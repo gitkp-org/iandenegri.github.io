@@ -48,14 +48,25 @@
                     {{ owner.0.last_name }}
                 </h1>
                 <div class="social-icons row">
-                    {% for social in socials %}
-                        <a href="{{social.url}}">
-                            <img src="{{social.image.url}}" height="50px" width="50px" class="social-icon">
+                    {% if socials|length <= 3 %}
+                        {% for social in socials %}
+                            <a href="{{social.url}}">
+                                <img src="{{social.image.url}}" height="50px" width="50px" class="social-icon">
+                            </a>
+                        {% endfor %}
+                        <a href="{{owner.0.resume.url}}">
+                            <img src="{% static 'website/img/resume.png' %}" height="50px" width="50px" class="social-icon">
                         </a>
-                    {% endfor %}
-                    <a href="{{owner.0.resume.url}}">
-                        <img src="{% static 'website/img/resume_icon.png' %}" height="50px" width="50px" class="social-icon">
-                    </a>
+                    {% else %}
+                        {% for social in socials %}
+                            <a href="{{social.url}}">
+                                <img src="{{social.image.url}}" height="40px" width="40px" class="social-icon">
+                            </a>
+                        {% endfor %}
+                        <a href="{{owner.0.resume.url}}">
+                            <img src="{% static 'website/img/resume.png' %}" height="40px" width="40px" class="social-icon">
+                        </a>
+                    {% endif %}
                 </div>
             </div>
         </div>

@@ -33,6 +33,10 @@ body {
   justify-content: center;
 }
 
+.unordered {
+  padding: 3px
+}
+
 .social-icon {
   padding: 5px;
 }
