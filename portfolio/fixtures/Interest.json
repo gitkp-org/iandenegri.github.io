@@ -1,0 +1,30 @@
+[
+    {
+        "model": "website.interest", 
+        "pk": 1, 
+        "fields": {
+            "interest_name": "Back-End Development"
+        }
+    }, 
+    {
+        "model": "website.interest", 
+        "pk": 2, 
+        "fields": {
+            "interest_name": "User Experience"
+        }
+    }, 
+    {
+        "model": "website.interest", 
+        "pk": 3, 
+        "fields": {
+            "interest_name": "Self Improvement and Learning"
+        }
+    }, 
+    {
+        "model": "website.interest", 
+        "pk": 4, 
+        "fields": {
+            "interest_name": "Collecting toys, trinkets and games"
+        }
+    } 
+]

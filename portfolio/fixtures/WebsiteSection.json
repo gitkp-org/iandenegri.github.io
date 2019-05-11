@@ -1,0 +1,18 @@
+[
+    {
+        "model": "website.websitesection", 
+        "pk": 1, 
+        "fields": {
+            "section_name": "A Little About Myself", 
+            "section_blurb": "My name is Ian and I'm a software developer based out of the United States! Here are some of my passions and interests:"
+        }
+    }, 
+    {
+        "model": "website.websitesection", 
+        "pk": 2, 
+        "fields": {
+            "section_name": "Past Works", 
+            "section_blurb": "My primary interest is software development; specifically, back-end development for web apps using Python and the Django framework. However, that isn't to say that I only do web development work. ;) Check out some of my past works:"
+        }
+    }
+]

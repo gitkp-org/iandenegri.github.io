@@ -1,0 +1,29 @@
+[
+    {
+        "model": "website.project", 
+        "pk": 1, 
+        "fields": {
+            "project_name": "My Portfolio Site", 
+            "URL": "https://github.com/iandenegri/iandenegri.github.io", 
+            "description": "This is the that site you're currently on! This site is nothing complex but is my first app written that can be pulled and used as a template."
+        }
+    }, 
+    {
+        "model": "website.project", 
+        "pk": 2, 
+        "fields": {
+            "project_name": "Reddit-like Clone", 
+            "URL": "https://github.com/iandenegri/simpledjangoforum", 
+            "description": "This is one of my first attempts at Django. This project is an attempt at cloning of Reddit. Utilizes authentication and validation for subreddit permissions."
+        }
+    }, 
+    {
+        "model": "website.project", 
+        "pk": 3, 
+        "fields": {
+            "project_name": "Django Social Blog", 
+            "URL": "https://github.com/iandenegri/django_small_blog", 
+            "description": "Started as a simple blog but has been expanded to be a social networking blog. This project is constantly ongoing and what I expand on when I work on personal projects."
+        }
+    }
+]
