@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #my apps.
-    'website.apps.WebsiteConfig'
+    'website.apps.WebsiteConfig',
+    #third party
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +134,11 @@ MEDIA_URL = "/media/"
 # Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
+
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+
+AWS_S3_FILE_OVERWRITE = True # So you can upload resumes with the same file name and overwrite your old one.
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
