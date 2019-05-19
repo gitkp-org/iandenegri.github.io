@@ -42,10 +42,10 @@
         <div class="col-md-3 justify-content-center align-self-center">
             <div class="card item right-section">
                 <h1 class="my-first-name">
-                    {{ owner.0.first_name }}
+                    {{ owner.first_name }}
                 </h1>
                 <h1 class="my-last-name">
-                    {{ owner.0.last_name }}
+                    {{ owner.last_name }}
                 </h1>
                 <div class="social-icons row">
                     {% if socials|length <= 3 %}
@@ -54,7 +54,7 @@
                                 <img src="{{social.image.url}}" height="50px" width="50px" class="social-icon">
                             </a>
                         {% endfor %}
-                        <a href="{{owner.0.resume.url}}">
+                        <a href="{{owner.resume.url}}">
                             <img src="{% static 'website/img/resume.png' %}" height="50px" width="50px" class="social-icon">
                         </a>
                     {% else %}
@@ -63,7 +63,7 @@
                                 <img src="{{social.image.url}}" height="40px" width="40px" class="social-icon">
                             </a>
                         {% endfor %}
-                        <a href="{{owner.0.resume.url}}">
+                        <a href="{{owner.resume.url}}">
                             <img src="{% static 'website/img/resume.png' %}" height="40px" width="40px" class="social-icon">
                         </a>
                     {% endif %}
